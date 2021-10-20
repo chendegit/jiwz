@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>试用-产品详情页</title>
+    <link rel="stylesheet" href="../css/user_report.css">
+    <script src="js/"></script>
+    <script src="js/use_free.js"></script>
+    <link rel="stylesheet" href="../css/topfoot.css">
+</head>
+
+<body>
+
+    <script src="./js/use_free.js"></script>
+    <div class="content">
+        <!-- nav -->
+        <div class="top">
+            <div class="nav">
+                <div class="nav_left"><a href="../index.html"><img src="./img/logonew.png" alt="" style="width: 130px;"></a></div>
+                <div class="nav_middle">
+                    <ul>
+                        <li class="on"><a href="../index.html">首页</a></li>
+                        <li class=""><a href="../play/play.html">酷玩</a></li>
+                        <li class=""><a href="../guid/guid.html">导购</a></li>
+                        <li class=""><a href="./use.html">试用</a></li>
+                        <li class=""><a href="../report/report.html">报告</a></li>
+                    </ul>
+                </div>
+                <div class="nav_right">
+                    <ul>
+                        <li><img src="../css/css_img/search.png" alt="" style="width: 20px;vertical-align: middle;"></li>
+                        <li><a href="../regist.html" target="_blank"><button class="btn">注册</button></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- middle -->
+        <div class="middle">
+            <div class="header">
+                <div class="center_" style="height: 100%;">
+                    <div class="header_font">
+                        <h2>幻想小贝HiFi2.1音箱</h2>
+                        <div class="header_point">
+                            <div class="poin_1">126人申请</div>
+                            <div class="poin_2">￥599</div>
+                            <div class="poin_3">20台</div>
+                        </div>
+
+                        <script type="text/javascript" src="../js/jquery.min.js"></script>
+                        <script>$(function () {
+                                var m = 59;
+                                var s = 59;
+                                setInterval(function () {
+                                    if (s < 10) {
+                                        //如果秒数少于10在前面加上0
+                                        $('.s_rand').html('申请剩余时间：13天5小时' + m + '分' + ':0' + s + '秒');
+                                    } else {
+                                        $('.s_rand').html('申请剩余时间：13天5小时' + m + '分' + s + '秒');
+                                    }
+                                    s--;
+                                    if (s < 0) {
+                                        //如果秒数少于0就变成59秒
+                                        s = 59;
+                                        m--;
+                                    }
+                                }, 1000)
+                            })
+                            $(function () {
+                                $('.goum').click(function () {
+                                    window.open("shiyong.html");
+                                })
+                            })
+
+                        </script>
+
+
+
+                        <div class="sy_time">
+
+                            <p class="s_rand">申请剩余时间：13天5小时</p>
+                        </div>
+                        <button class="sq_button">立即申请</button>
+                    </div>
+                </div>
+            </div>
+            <div class="flow">
+                <div class="flow_path center_">
+                    <h4>试用流程</h4>
+                    <div class="path_">
+                        <div class="path_1 path_active">
+                            开放申请</div>
+                        <div class="path_2">名单公布</div>
+                        <div class="path_3">产品试用</div>
+                        <div class="path_4">提交反馈</div>
+                        <div class="path_5">活动结束</div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+            <div class="center_">
+                <div class="cont_">
+                    <div class="cont_1">
+                        <h4 class="ctt_h4">产品介绍</h4>
+                        <h5>多重功能集成的便携控制中心：半果控制中心。</h5>
+                        <p>半果控制中心是一台功能高度集成的便携控制设备，包含WiFi收发模块、蓝牙4.1模块、独立声卡系统、音乐控制拨盘、麦克风语音接收、3.5mm耳机接口、高速数据传输、QC2.0快速充电、Type-C接口等。仅需将其与电脑连接，即可解决科技生活中遇到的种种痛点。
+                        </p>
+                        <img src="./img/use1.jpg" alt="">
+                        <p class="blu">结构设计</p>
+                        <p>极致一体化，机身表面没有一丝接缝和一颗螺丝。采用突破性的液态金属质感工艺，无任何键位开关，所有功能同时自然高效运行。</p>
+                        <p class="blu">无线网络</p>
+                        <p>台式机或无自带网卡的电脑只需插入半果控制中心，切换至网卡模式即可接受WiFi信号。还可创建WiFi热点，让你的手机和平板立刻联网。</p>
+                        <img src="./img/use.jpg" alt="">
+                        <p class="blu">蓝牙连接</p>
+                        <p>先进的超低功耗蓝牙4.1，设备配对连接更便捷。可将所有设备连接至一台控制中心，数据传输速率大幅提高。
+                        </p>
+                        <p class="blu">独立声卡</p>
+                        <p>配备德州仪器HiFi芯片，内置Max Bass技术，带来更高解析力音质。并且采用独立耳机放大器，内置麦克风，任何软件都可轻松调用。</p>
+                        <p class="blu">极速充电</p>
+                        <p>支持QC 2.0快充协议，使用一根Type-C线，4个USB可同时极速快充，并且每个接口都拥有芯片级的4重保护，告别插线板和充电器。</p>
+                        <h4 class="ctt_h4">活动介绍</h4>
+                        <p>点击申请按钮报名，报名成功后记得邀请好友一起来参与哦~邀请好友数前十名将根据申请理由和影响力抽取一位直接获得试用机会。请认真填写申请理由，展现有创意的试用计划。进入手机端完善个人主页信息，可以大大提高申请通过几率哦~
+                        </p>
+                        <p class="blu">试用报告要求100% 原创，抄袭会被封杀哦！</p>
+                        <h5>活动流程</h5>
+                        <ol>
+                            <li>名单公布：试用名单将在活动页公布</li>
+                            <li>试用通知：名单公布后客服将以短信的方式通知申请成功者，2天不回复算弃权</li>
+                            <li>押金收取：客服将统一通知大家收取产品押金</li>
+                            <li>产品寄送：收到押金后第一时间将产品快递给大家</li>
+                            <li>网络晒单：收货后请在微博或朋友圈等社交网络晒单</li>
+                            <li>.试用报告：收到货的10天内完成报告并上传</li>
+                            <li>产品回收：选取6篇优秀报告，赠送产品</li>
+                            <li>押金退回：活动结束返还，人为损坏须赔偿</li>
+                        </ol>
+                        <h5>活动时间</h5>
+                        <ol>
+                            <li>申请报名：2016/02/02－2016/02/17（截至24点）</li>
+                            <li>公布名单：2016/02/20</li>
+                            <li>发货日期：2016/02/22（以实际为准）</li>
+                            <li>试用期限：收到产品后10天内</li>
+                        </ol>
+                        <div class="hot_box center_">
+                            <p class="hot_yy">热门试用</p>
+                            <div class="hot_more"><a href="./use.html">查看更多</a></div>
+                        </div>
+
+
+
+
+
+
+
+                    </div>
+                    <div class="cont_2">
+                        <h4 class="ctt_h4">购买渠道</h4>
+                        <h1 class="gmqd">￥ 499</h1>
+                        <div
+                            style="color: #fff; margin: 14px 0; border: none; font-size: 17px; background-color: #fe5341; width: 270px; height: 48px; text-align: center; line-height: 48px;">
+                            点击购买</div>
+                        <p class="sm" style="text-align: center;">来自官网</p>
+                        <h4 class="ctt_h4">极果体验师</h4>
+                        <img class="goum" style="cursor: pointer;" src="img/tiyanImg.jpg" alt="">
+                        <p class="sm">第一时间体验新品，大众试用优先通过，还有定向邀请试用，新品玩到手软！</p>
+                        <h5 class="blk">要求</h5>
+                        <p class="sm">是某个领域的大神级玩家，在社交网络或圈子里有大影响力，善写作会拍摄。</p>
+                        <h5 class="blk">申请</h5>
+                        <ol style="margin: 14px 0;">
+                            <li>
+                                <p class="sm">关注极果公众号：jguojguo
+                                    （或扫描下方二维码）</p>
+                            </li>
+                            <li>
+                                <p class="sm">在公众号内回复：体验师</p>
+                            </li>
+                        </ol>
+                        <h4 class="cyy_h4">关注我们</h4>
+                        <img src="img/myCode.jpg" alt="" class="left_cont_2">
+
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+
+
+
+
+
+                <div class="main_sp">
+                    <!-- 1 -->
+                    <div class="box1">
+                        <div class="sf">首发</div>
+                        <img src="http://192.168.1.29:3000/img/hot1.jpg" alt="">
+                        <div class="wz">
+                            <h4 class="text">怎么骑都不会累的智能自行车：云马 C1试骑体验</h4>
+                            <div class="sy">
+                                <div class="sy_ totalnum">2032</div>
+                                <div class="sy_ num">20台</div>
+                            </div>
+                            <h5><span class="apply">1392</span>申请</h5>
+                            <div class="bgsl">
+                                报告数量：8
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="box1">
+                        <div class="sf">首发</div>
+                        <img src="http://192.168.1.29:3000/img/hot2.jpg" alt="">
+                        <div class="wz">
+                            <h4 class="text">声音不是最优秀，但它形音完美的结合，足够打动人心</h4>
+                            <div class="sy2 sy">
+                                <div class="sy_ totalnum">2032</div>
+                                <div class="sy_ num">20台</div>
+                            </div>
+                            <h5><span class="apply">1392</span>申请</h5>
+                            <div class="symd">
+                                查看试用名单
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="box1">
+                        <div class="sf">首发</div>
+                        <img src="http://192.168.1.29:3000/img/hot3.jpg" alt="">
+                        <div class="wz">
+                            <h4 class="text">Liquid Image 338 运动摄像眼镜</h4>
+                            <div class="sy">
+                                <div class="sy_ totalnum">2032</div>
+                                <div class="sy_ num">20台</div>
+                            </div>
+                            <h5><span class="apply">1392</span>申请</h5>
+                            <div class="bgsl">
+                                报告数量：8
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+        <!-- footer -->
+        <div class="bottom">
+            <div class="footer">
+                <div class="foot_top">
+                    <div class="foot_code"><a href="../index.html"><img src="../img/code.png" alt="" style="width: 140px;"></a></div>
+                    <div class="foot_logo"><a href="../index.html"><img src="../img/logoImg.jpg" alt="" style="width: 100px;"></a>
+                        <p>全球酷玩试用导购平台<br>酷·新奇·好玩·品质</p>
+                        <p>微信添加“ Jguojguo获取我们的装务</p>
+                    </div>
+                    <div class="foot_text">  
+                        <dl>
+                            <dt>免费试用</dt>
+                            <dd><a href="../help.html">试用流程</a></dd>
+                            <dd><a href="../help.html">如何提高成功率</a></dd>
+                        </dl> 
+                            <dl>
+                                <dt>友情链接</dt>
+                                <dd>智东西 <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> WEIBUSI</dd>
+                                <dd>搜狐IT   <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>    腾讯科技</dd>
+                                <dd>搜狐数码  <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>   凤凰科技</dd>
+                                <dd>凤凰数码  <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>   Pconline</dd>
+                                <dd>泡泡网   <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>    3W咖啡</dd>
+                                <dd>ZUK社区  <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>    亿觅emie</dd>
+                                <dd>极客公园   <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>  易迅易启玩</dd>
+                               <dd>果库</dd>
+                            </dl>
+                            <dl>
+                                <dt>购买攻略</dt>
+                                <dd><a href="../index.html" target="_blank">美亚海淘教程</a></dd>
+                                <dd><a href="../index.html" target="_blank">日亚海淘教程</a></dd>
+                                <dd><a href="../index.html" target="_blank">海淘转运攻略</a></dd>
+                                <dd><a href="../index.html" target="_blank">kickstarter 众筹购买攻略</a></dd>
+                                <dd><a href="../index.html" target="_blank">indiegogo 众筹购买攻略</a></dd>
+                            </dl>
+                           <dl>
+                                <dt>厂商合作</dt>
+                                <dd><a href="../index.html" target="_blank">关于极果</a></dd>
+                                <dd><a href="../index.html" target="_blank">联系我们</a></dd>
+                                <dd><a href="../index.html" target="_blank">商务合作：BD@jiguo.com</a></dd>
+                                <dd><a href="../index.html" target="_blank">CEO邮箱：CEO@jiguo.com</a></dd>
+                            </dl>
+                           
+                    </div>
+                </div>
+                <div class="foot_bottom"><p> © 2021 极果版权所有</p></div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

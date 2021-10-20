@@ -1,0 +1,180 @@
+body,p,ul,ol,dl,dt{
+    margin: 0;
+    padding: 0;
+}
+ul,ol{
+    list-style: none;
+}
+input{
+    border: none;
+    outline: none;
+}
+a{
+    text-decoration: none;
+}
+
+
+
+/* 发现酷玩头部 */
+.play_t {
+    width: 1080px;
+    background-color: white;
+    text-align: center;
+    margin: 0 auto;
+}
+h1 {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, "Microsoft YaHei";
+}
+.list {
+    overflow: hidden;
+    padding-left: 390px;
+}
+.list a li{
+    float: left;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    padding: 5px auto;
+    color: #A6A797;
+}
+.list .fixed {
+    color: #FF5339;
+    border-bottom: 3px solid #FF5339;
+}
+
+
+/* 最新--图片设置 */
+.play_zp {
+    width: 1080px;
+    margin: 0 auto;
+    background-color: #F7F7F7;
+    overflow: hidden;
+    
+    
+}
+.play_zp .plat_zz {
+    overflow: hidden;
+    padding-left: 125px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+}
+.play_zp .play_hh {
+    float: left;
+    margin-left: 30px;
+}
+.play_zp .play_sp {
+    width: 170px;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+}
+.play_zp .play_sp .play_sp_img {
+    width: 100%;
+    height: 100px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.play_zp .play_sp .play_sp_bot {
+    background-color: white;
+    height: 100px;
+    width: 170px;
+    position: absolute;
+    bottom: 0;
+    border-top: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.play_zp .play_sp .play_sp_bot span {
+    font-size: 13px;
+    height: 20px;
+    display: block;
+    margin-top: 8px;
+    margin-left: 10px;
+}
+.play_zp .play_sp p {
+    font-size: 8px;
+    color: #BBB6B2;
+    display: block;
+    margin-left: 10px;
+}
+.play_zp .play_sp .jg {
+    width: 170px;
+    font-size: 8px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 8px;
+    height: 20px;
+}
+.play_zp .play_sp .jg .jg_q{
+    color: #FF5339;
+    font-size: 17px;
+}
+.play_zp .play_sp .jg .jgr{
+    float: right; 
+    height: 20px;
+    padding-top:2px;
+}
+.play_zp .play_sp .jg .jgr img {
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    line-height: 20px;
+}
+.play_zp .play_sp .jg .jgr .jg_l,.play_zp .play_sp .jg .jgr .jg_r{
+    line-height: 20px;
+}
+.play_zp .play_sp .jg .jgr .jg_l a{
+    line-height: 20px;
+}
+
+.play_zp .play_foot {
+    width: 100%;
+    text-align: center;
+    height: 80px;
+}
+.play_zp .play_foot .paly_foot_h {
+    line-height: 80px;
+}
+.play_zp .play_foot .paly_foot_h a {
+    color: #F7553C;
+}
+
+@keyframes anima{
+    from{
+        position: relative;
+        top: 0px;
+        box-shadow: 0px 0px 0px #c7c6c6;    
+    }
+    to{
+        position: relative;
+        top: -5px;
+        box-shadow: 5px 5px 15px #c7c6c6;
+    }
+}
+.play_sp:hover{
+    animation: anima;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.play_sp {
+    transition: All 0.4s ease-in-out;
+    -webkit-transition: All 0.4s ease-in-out;
+    -moz-transition: All 0.4s ease-in-out;
+    -o-transition: All 0.4s ease-in-out;
+}
+
+.play_sp:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+}

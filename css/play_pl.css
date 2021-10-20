@@ -1,0 +1,121 @@
+body,p,ul,ol,dl,dt{
+    margin: 0;
+    padding: 0;
+}
+ul,ol{
+    list-style: none;
+}
+input{
+    border: none;
+    outline: none;
+}
+a{
+    text-decoration: none;
+}
+
+
+
+/* 发现酷玩头部 */
+.play_t {
+    width: 1080px;
+    background-color: white;
+    text-align: center;
+    margin: 0 auto;
+}
+h1 {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, "Microsoft YaHei";
+}
+.list {
+    overflow: hidden;
+    padding-left: 390px;
+}
+.list a li{
+    float: left;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    padding: 5px auto;
+    color: #A6A797;
+}
+.list .fixed {
+    color: #FF5339;
+    border-bottom: 3px solid #FF5339;
+}
+
+
+/* 品类头部 */
+.play_pl .play_pl_all{
+    width: 1080px;
+    background-color: #F7F7F7;
+    margin: 0 auto;
+    padding-top: 20px;
+    height: 2820px;  
+}
+.play_pl .play_pl_all .play_pl_one{
+    width: 800px;
+    background-color: white;
+    margin: 50px auto;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.play_pl_one .play_pl_one_t {
+    margin-top: 10px;
+    overflow: hidden;
+}
+.play_pl_one .play_pl_one_t span{
+    display: block;
+    width: 5px;
+    height: 21px;
+    background-color: #FF5339;
+    float: left;
+}
+.play_pl_one .play_pl_one_t p{
+    margin-left: 15px;
+    font-size: 14px;
+    text-shadow: #d3d3d3 0 0 3px ;
+}
+
+/* 中间图片 */
+.play_pl_one_z {
+    overflow: hidden;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.play_pl_one_z .play_pl_one_z-1 {
+    float: left;
+    width: 120px;
+    height: 100px;
+    margin-top: 25px;
+}
+.play_pl_one_z .play_pl_one_z-1 img {
+    width: 80px;
+    height: 80px;
+}
+.play_pl_one_z .play_pl_one_z-1 p{
+    font-size: 10px;
+    color: #B4B3B8;
+}
+
+/* 脚部 */
+.play_pl_one_d {
+    border-top: 1px dashed #B4B3B8;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding-top: 15px;
+}
+.play_pl_one_d-all {
+    overflow: hidden;
+    margin-left: 15px;
+}
+.play_pl_one_d-1 {
+    margin: 10px 20px;
+}
+.play_pl_one_d a{
+    font-size: 10px;
+    color: #B4B3B8;
+    width: 120px;
+    float: left;
+}

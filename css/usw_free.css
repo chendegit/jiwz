@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: Arial, Helvetica, "Microsoft YaHei";
+}
+.middle{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(247, 247, 247);
+}
+
+.center_ {
+    width: 1080px;
+    margin: 0 auto;
+}
+
+li {
+    list-style-type: none;
+    color: #aeaeae;
+}
+/**/
+
+.tab {
+    width: 100%;
+}
+
+.tab_list {
+    width: 100%;
+    height: 39px;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+    box-shadow: 1px 2.3px 5px rgb(189, 189, 189);
+}
+
+.tab_list ul {
+    width: 1080px;
+    height: 39px;
+}
+
+.tab_list li {
+    float: left;
+    height: 39px;
+    width: 270px;
+    max-width: 270px;
+    line-height: 39px;
+    padding: 0 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.tab_list .current {
+    font-weight: 600;
+    color: #808080;
+}
+.tab_top li{
+    cursor: pointer;
+}
+/*试用头部样式*/
+
+header {
+    background-color: #fff;
+    height: 143px;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+header h1 {
+    font-size: 38px;
+    font-weight: 500;
+    color: #2f2b20;
+    text-align: center;
+    margin: 50px auto;
+}
+
+header .tab_top {
+    width: 300px;
+    height: 44px;
+}
+
+header .tab_top li {
+    float: left;
+    width: 150px;
+    height: 44px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 44px;
+    text-align: center;
+}
+
+header .tab_top .current_ {
+    color: rgb(251, 92, 72);
+    border-bottom: 2px solid rgb(253, 83, 56);
+}
+
+.item_info {
+    padding: 20px 0 0 20px;
+}
+/*试用基础样式*/
+
+.item {
+    display: none;
+    margin-top: 14px;
+    height: 100%;
+}
+
+ .main_sp {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+ .main_sp img {
+    width: 246px;
+    height: 153px;
+}
+
+ .main_sp h4 {
+    text-align: center;
+    width: 210px;
+    margin: 0 auto;
+}
+
+/*试用栏 样式*/
+
+.main_sp .box1 {
+    position: relative;
+    border: 1px solid #e8e8e8;
+    border-radius: 8px;
+    background-color: #fff;
+    overflow: hidden;
+    margin: 18px auto;
+    cursor: pointer;
+    src:url(../user_report.html);
+}
+.main_sp .box1:hover{
+    transform: scale(1.1);
+    box-shadow: 1px 2px 20px rgb(167, 167, 167);
+    transition: .6s all linear;
+}
+
+/*试用栏样式 2*/
+
+.main_sp .wz {
+    margin: 6px;
+}
+
+.main_sp .sy {
+    display: flex;
+    justify-content: space-between;
+    width: 111px;
+    height: 25px;
+    margin: 0 auto;
+    text-align: center;
+    margin: 8px auto;
+}
+
+/*首发样式*/
+
+.main_sp .box1 .sf {
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: center;
+    line-height: 22px;
+    width: 40px;
+    height: 22px;
+    background-color: #f8542e;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 0 6px 0 6px;
+}
+
+/*普通试用栏*/
+
+.main_sp .sy .sy_ {
+    border: 1px solid #cfcfcf;
+    border-radius: 5px;
+    color: #cfcfcf;
+    font-size: 12px;
+    text-align: center;
+    height: 25px;
+    width: 50px;
+    line-height: 25px;
+    float: left;
+}
+.main_sp .sy .sy_:hover{
+    background-color:#cfcfcf ;
+    color: #fff;
+}
+
+.main_sp .bgsl {
+    text-align: center;
+    margin: 6px auto;
+    color: #cfcfcf;
+    font-size: 14px;
+}
+
+/*剩余时间-限时试用栏*/
+
+.main_sp .sy1 .sy_ {
+    border: 1px solid #7bc862;
+    border-radius: 5px;
+    color: #7bc862;
+    font-size: 12px;
+    text-align: center;
+    height: 25px;
+    width: 50px;
+    line-height: 25px;
+    float: left;
+}
+.main_sp .sy1 .sy_:hover{
+    background-color: #7bc862;
+    color: #fff;
+}
+
+.main_sp .sysj {
+    text-align: center;
+    margin: 6px auto;
+    color: #7bc862;
+    font-size: 14px;
+}
+
+/*试用名单*/
+
+.main_sp .sy2 .sy_ {
+    border: 1px solid #f75441;
+    border-radius: 5px;
+    color: #f75441;
+    font-size: 12px;
+    text-align: center;
+    height: 25px;
+    width: 50px;
+    line-height: 25px;
+    float: left;
+}
+.main_sp .sy2 .sy_:hover{
+    background-color:#f75441 ;
+    color: #fff;
+}
+
+.main_sp .symd {
+    text-align: center;
+    margin: 6px auto;
+    color: #f75441;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/*申请数量*/
+
+.main_sp h5 {
+    text-align: center;
+    margin: 6px auto;
+    font-weight: 500;
+}
+
+.main_sp h5 span {
+    color: #ff3c3c;
+}
+
+/*下拉*/
+
+.more {
+    text-align: center;
+    width: 1080px;
+    height: 44px;
+    margin: 52px auto;
+    font-size: 18px;
+    color: #fe5035;
+    cursor: pointer;
+}
+
+/*体验师专享*/
+.tab_2{
+    z-index: 999;
+    display: none;
+}
+.tys{
+    background-color: #fef6cf;
+    color: #beb78b;
+    width: 78px;
+    height: 22px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: center;
+    line-height: 22px;
+    font-size: 14px;
+    border-radius: 0 6px 0 6px;
+}

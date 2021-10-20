@@ -1,0 +1,481 @@
+.middle {
+  background-color: white;
+  width: 100%;
+  position: relative;
+  clear: both;
+}
+.middle .foucsimg {
+  /*1、焦点图：*/
+  min-width: 1080px;
+  position: relative;
+  height: 324px;
+  overflow: hidden;
+  width: 100%;
+}
+.middle .foucsimg .foucsimg_bg {
+  height: 100%;
+  position: absolute;
+  text-align: center;
+  width: 10000px;
+  margin-left: -5000px;
+  left: 50%;
+}
+.middle .foucsimg .foucsimg_bg img {
+  display: inline-block;
+  height: 100%;
+  border: none;
+  vertical-align: middle;
+}
+.middle .foucsimg .foucsimg_text {
+  height: 244px;
+  padding: 40px 70px;
+  text-align: right;
+  color: #fff;
+  display: block;
+  clear: both;
+  width: 1080px; right: 50%;transform: translateX(50%);
+  margin: auto;
+  background: transparent;
+  position: absolute;z-index: 6;
+  animation: cx 1.5s  ease-out ;
+}
+@keyframes cx {
+  0%{transform: scale(.1) translate(20000px,-8000px);} 
+  100%{   }
+}
+.middle .foucsimg .foucsimg_text .text_title {
+  font-size: 32px;
+  font-weight: bold;
+  height: 56px;
+  overflow: hidden;
+}
+.middle .foucsimg .foucsimg_text .text_info {
+  text-align: center;
+  display: inline-block;
+  min-width: 235px;
+}
+.middle .foucsimg .foucsimg_text .text_info .text_box {
+  margin: 5px 0;
+  text-align: center;
+  zoom: 1;
+}
+.middle .foucsimg .foucsimg_text .text_info .text_box .text_tag {
+  background-color: rgba(247, 244, 244, 0.3);
+  padding: 5px 6px;
+  line-height: 24px;
+  overflow: hidden;
+  margin-left: 5px;
+  position: relative;
+  top: auto;
+  left: auto;
+  display: inline-block;
+}
+.middle .foucsimg .foucsimg_text .text_info .text_box .w60 {
+  min-width: 60px;
+}
+.middle .foucsimg .foucsimg_text .text_info .text_box .w50 {
+  min-width: 40px;
+}
+.middle .foucsimg .foucsimg_text .text_info .text_box w37 {
+  min-width: 37px;
+}
+.middle .foucsimg .foucsimg_text .text_info .text_box {
+  font-size: 16px;
+  line-height: 28px;
+  margin-top: 25px;
+  text-align: right;
+  letter-spacing: 0px;
+}
+.middle .foucsimg .foucsimg_text .text_info .text_btn {
+  text-align: center;
+  margin-top: 25px;
+}
+.middle .foucsimg .foucsimg_text .text_info .text_btn .btn_sq {
+  color: white;
+  font-size: 16px;
+  line-height: 36px;
+  height: 36px;
+  display: block;
+  background: #fe584d !important;
+}
+.middle .hot {
+  /*2、热门试用：*/
+  background-color: #fff;
+  padding-bottom: 10px;
+  padding-top: 20px;
+  display: block;
+  width: 1080px !important;
+  margin: auto;
+  background: transparent;
+  position: relative;
+}
+.middle .hot .top_t {
+  width: 100%;
+}
+.middle .hot .warp {
+  padding-top: 20px;
+  width: 100%;
+  height: 280px;
+  position: relative;
+}
+.middle .hot .warp .hot_box {
+  position: absolute;
+  width: 1080px;
+  float: left;
+  clear: both;
+}
+.middle .hot .warp .hot_box ul {
+  display: flex;
+  justify-content: space-between;
+}
+.middle .hot .warp .hot_box li {
+  width: 220px;
+  border: 1px solid gainsboro;
+  border-radius: 10px;
+  text-align: center;
+  display: inline-block;
+}
+.middle .hot .warp .hot_box .li_box {
+  width: 200px;
+  padding: 5px 10px;
+}
+.middle .hot .warp .hot_box .li_box p {
+  margin: 5px 0;
+}
+.middle .hot .warp .hot_box .li_box .box_ti {
+  font-weight: 550;
+}
+.middle .hot .warp .hot_box .li_box .box_tag {
+  display: inline-block;
+  font-size: 14px;
+  width: 50px;
+  height: 20px;
+  color: red;
+  border: red 1px solid;
+  border-radius: 5px;
+}
+.middle .hot .warp .hot_box .li_box .box_peo {
+  color: red;
+}
+.middle .hot .warp .hot_box .li_box .box_tagg {
+  display: inline-block;
+  font-size: 14px;
+  width: 50px;
+  height: 20px;
+  color: green;
+  border: green 1px solid;
+  border-radius: 5px;
+}
+.middle .hot .warp .hot_box .li_box .box_peog {
+  color: green;
+}
+.middle .gry {
+  width: 100%;
+  background-color: #eee;
+}
+.middle .gry .report {
+  /*3、报告精选：*/
+  padding-bottom: 10px;
+  padding-top: 20px;
+  display: block;
+  clear: both;
+  width: 1080px !important;
+  margin: auto;
+  position: relative;
+}
+.middle .gry .report .top_t {
+  width: 100%;
+  height: 30px;
+  position: relative;
+  clear: both;
+}
+.middle .gry .report .top_t .top_l {
+  position: absolute;
+  float: left;
+}
+.middle .gry .report .top_t .top_r {
+  color: red;
+  font-size: 14px;
+  position: absolute;
+  top: 30%;
+  float: left;
+  right: 0;
+}
+.middle .gry .report .rewarp {
+  padding-top: 10px;
+  width: 100%;
+  height: 550px;
+  position: relative;
+}
+.middle .gry .report .rewarp .re_box {
+  position: absolute;
+  float: left;
+  clear: both;
+}
+.middle .gry .report .rewarp .re_box ul {
+  display: flex;
+  width: 1080px;
+  flex-wrap: wrap;
+  height: 530px;
+  justify-content: space-between;
+  align-content: space-around;
+}
+.middle .gry .report .rewarp .re_box li {
+  width: 220px;
+  height: 240px;
+  border: 1px solid gainsboro;
+  border-radius: 10px;
+  display: inline-block;
+  clear: both;
+  background-color: white;
+}
+.middle .gry .report .rewarp .re_box .re_img {
+  top: -1px;
+  position: relative;
+  width: 221px;
+}
+.middle .gry .report .rewarp .re_box .re_box {
+  width: 200px;
+  padding: 5px 10px;
+}
+.middle .gry .report .rewarp .re_box .re_box p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+.middle .gry .report .rewarp .re_box .re_bottom {
+  width: 200px;
+  height: 30px;
+  font-size: 13px;
+  position: relative;
+  clear: both;
+  padding: 5px 10px;
+  bottom: -70px;
+}
+.middle .gry .report .rewarp .re_box .re_bottom .bm_l {
+  position: absolute;
+  float: left;
+}
+.middle .gry .report .rewarp .re_box .re_bottom .bm_r {
+  position: absolute;
+  top: 20%;
+  float: left;
+  right: 15px;
+}
+.middle .gry .report .rewarp .re_box .re_bottom .bm_r span {
+  margin: 0px 5px;
+}
+.middle .gry .report .rewarp .re_box .re_bottom .bm_r span img {
+  margin: 0px 3px;
+}
+.middle .white {
+  width: 100%;
+  background-color: #fff;
+}
+.middle .white .guid {
+  /*4、导购精选：*/
+  padding-bottom: 10px;
+  padding-top: 20px;
+  display: block;
+  clear: both;
+  width: 1080px !important;
+  margin: auto;
+  position: relative;
+}
+.middle .white .guid .top_t {
+  width: 100%;
+  height: 30px;
+  position: relative;
+  clear: both;
+}
+.middle .white .guid .top_t .top_l {
+  position: absolute;
+  float: left;
+}
+.middle .white .guid .top_t .top_r {
+  color: red;
+  font-size: 14px;
+  position: absolute;
+  top: 30%;
+  float: left;
+  right: 0;
+}
+.middle .white .guid .rewarp {
+  padding-top: 10px;
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+.middle .white .guid .rewarp .re_box {
+  position: absolute;
+  float: left;
+  clear: both;
+}
+.middle .white .guid .rewarp .re_box ul {
+  display: flex;
+  width: 1080px;
+  flex-wrap: wrap;
+  height: 280px;
+  justify-content: space-between;
+  align-content: space-around;
+}
+.middle .white .guid .rewarp .re_box li {
+  width: 220px;
+  height: 240px;
+  border: 1px solid gainsboro;
+  border-radius: 10px;
+  display: inline-block;
+  clear: both;
+  background-color: white;
+}
+.middle .white .guid .rewarp .re_box .re_img {
+  top: -1px;
+  position: relative;
+  width: 221px;
+}
+.middle .white .guid .rewarp .re_box .re_box {
+  width: 200px;
+  padding: 5px 10px;
+}
+.middle .white .guid .rewarp .re_box .re_box p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+.middle .white .guid .rewarp .re_box .re_bottom {
+  width: 200px;
+  height: 30px;
+  font-size: 13px;
+  position: relative;
+  clear: both;
+  padding: 5px 10px;
+  bottom: -70px;
+}
+.middle .white .guid .rewarp .re_box .re_bottom .bm_r {
+  position: absolute;
+  top: 20%;
+  float: left;
+  right: 15px;
+}
+.middle .white .guid .rewarp .re_box .re_bottom .bm_r span {
+  margin: 0px 5px;
+}
+.middle .white .guid .rewarp .re_box .re_bottom .bm_r span img {
+  margin: 0px 3px;
+}
+.middle .white .guid .rewarp .re_box .gd_img {
+  width: 200px;
+  position: relative;
+  clear: both;
+  bottom: -67px;
+}
+.middle .gry {
+  width: 100%;
+  background-color: #eee;
+}
+.middle .gry .play {
+  /*5、发现酷玩：*/
+  padding-bottom: 10px;
+  padding-top: 20px;
+  display: block;
+  clear: both;
+  width: 1080px !important;
+  margin: auto;
+  position: relative;
+}
+.middle .gry .play .top_t {
+  width: 100%;
+  height: 30px;
+  position: relative;
+  clear: both;
+}
+.middle .gry .play .top_t .top_l {
+  position: absolute;
+  float: left;
+}
+.middle .gry .play .top_t .top_r {
+  color: red;
+  font-size: 14px;
+  position: absolute;
+  top: 30%;
+  float: left;
+  right: 0;
+}
+.middle .gry .play .rewarp {
+  padding-top: 10px;
+  width: 100%;
+  height: 1120px;
+  position: relative;
+}
+.middle .gry .play .rewarp .re_box {
+  position: absolute;
+  float: left;
+  clear: both;
+}
+.middle .gry .play .rewarp .re_box ul {
+  display: flex;
+  width: 1080px;
+  flex-wrap: wrap;
+  height: 1100px;
+  justify-content: space-between;
+  align-content: space-around;
+}
+.middle .gry .play .rewarp .re_box li {
+  width: 220px;
+  height: 240px;
+  border: 1px solid gainsboro;
+  border-radius: 10px;
+  display: inline-block;
+  clear: both;
+  background-color: white;
+}
+.middle .gry .play .rewarp .re_box .re_img {
+  top: -1px;
+  position: relative;
+  width: 221px;
+}
+.middle .gry .play .rewarp .re_box .re_box {
+  width: 200px;
+  padding: 5px 10px;
+}
+.middle .gry .play .rewarp .re_box .re_box .re_ti {
+  margin: 5px 0;
+  font-size: 14px;
+}
+.middle .gry .play .rewarp .re_box .re_box .re_ti12 {
+  margin: 5px 0;
+  font-size: 12px;
+  color: gray;
+}
+.middle .gry .play .rewarp .re_box .re_bottom {
+  width: 200px;
+  height: 30px;
+  font-size: 13px;
+  position: relative;
+  clear: both;
+  padding: 5px 10px;
+  bottom: -70px;
+}
+.middle .gry .play .rewarp .re_box .re_bottom .bm_l {
+  position: absolute;
+  float: left;
+}
+.middle .gry .play .rewarp .re_box .re_bottom .bm_l span {
+  color: red;
+}
+.middle .gry .play .rewarp .re_box .re_bottom .bm_r {
+  position: absolute;
+  top: 20%;
+  float: left;
+  right: 15px;
+}
+.middle .gry .play .rewarp .re_box .re_bottom .bm_r span {
+  margin: 0px 5px;
+}
+.middle .gry .play .rewarp .re_box .re_bottom .bm_r span img {
+  margin: 0px 3px;
+}
+.middle .gry .play .more {
+  width: 1080px;
+  margin: 30px auto;
+  text-align: center;
+  color: red;
+}

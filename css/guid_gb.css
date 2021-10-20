@@ -1,0 +1,167 @@
+body,p,ul,ol,dl,dt{
+    margin: 0;
+    padding: 0;
+}
+ul,ol{
+    list-style: none;
+}
+input{
+    border: none;
+    outline: none;
+}
+a{
+    text-decoration: none;
+}
+
+
+/* .guid_gb{
+    color: #B4B3B8;
+} */
+.guid_gb_all {
+    width: 1080px;
+    background-color: #F7F7F7;
+    margin: 0 auto;
+}
+
+/* 头部 */
+.guid_gb_all .guid_gb_h{
+    width: 1080px;
+    height: 50px;
+    background-color: #F7F7F7;
+    margin: 0 auto;
+}
+.guid_gb_all .guid_gb_h .guid_gb_h-a{
+    margin-left: 150px;
+    font-size: 12px;
+    color: #B4B3B8;
+    line-height: 50px;
+}
+.guid_gb_all .guid_gb_h .guid_gb_h-a a{
+    color: #B4B3B8;
+    line-height: 50px;
+}
+
+
+/* 正文 */
+/* 头 */
+.guid_gb_z {
+    width: 550px;
+    margin-left: 150px;
+    background-color: #FFFFFF;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.guid_gb_z .guid_gb_z-t {
+    border-bottom: 1px solid rgb(204, 204, 204);
+    overflow: hidden;
+}
+.guid_gb_z .guid_gb_z-t h2 {
+    display: block;
+    font-weight: 500;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.guid_gb_z .guid_gb_z-t span {
+    display: block;
+    width: 275px;
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 20px;
+    font-size: 13px;
+    color: #B4B3B8;
+}
+.guid_gb_z .guid_gb_z-t p {
+    display: block;
+    width: 100px;
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    margin-left: 140px;
+    font-size: 13px;
+    color: #B4B3B8
+}
+
+/* 中间 */
+.guid_gb_z-x h5{
+    text-align: center;
+    font-size: 15px;
+}
+.guid_gb_z-x .guid_gb_z-p {
+    display: block;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+    font-size: 12px;
+    line-height: 1.5em
+}
+.guid_gb_z-x .guid_gb_z-img {
+    display: block;
+    width: 500px;
+    height: 280px;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+.guid_gb_z-z .guid_gb_z-d {
+    padding-left: 25px;
+    font-size: 13px;
+    color: #B4B3B8;
+    margin-top: 50px;
+    padding-bottom: 30px;
+}
+.guid_gb_z-z .guid_gb_z-d a{
+    font-size: 13px;
+    color: #B4B3B8;
+}
+
+/* 右边 */
+.guid_gb_all {
+    position: relative;
+}
+.guid_gb_r {
+    width: 202px;
+    height: 80px;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 50px;
+    right: 135px;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 5px;
+    overflow: hidden;
+}
+.guid_gb_r .guid_gb_r-l{
+    width: 100px;
+    float: left;
+    height: 80px;
+    font-size: 13px;
+    color: #B4B3B8;
+    border-right:1px solid rgb(204, 204, 204) ;
+}
+.guid_gb_r .guid_gb_r-r{
+    width: 100px;
+    float: left;
+    height: 80px;
+    font-size: 13px;
+    color: #B4B3B8;
+}
+.guid_gb_r .guid_gb_r-i{
+    display: block;
+    margin-left: 35px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    width: 20px;
+    height: 20px;
+    line-height: 1.5em
+}
+.guid_gb_r a{
+    font-size: 13px;
+    color: #B4B3B8;
+}
+.guid_gb_r .guid_gb_r-pp {
+    margin-top: 5px;
+    margin-left: 23px;
+} 
+.guid_gb_r .guid_gb_r-pq {
+    margin-top: 5px;
+    margin-left: 33px;
+} 

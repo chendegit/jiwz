@@ -1,0 +1,1820 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>极果 免费试用</title>
+    <link rel="stylesheet" href="../css/usw_free.css">
+    <link rel="stylesheet" href="../css/topfoot.css">
+</head>
+
+<body>
+    <script src="../js/jquery.min.js"></script>
+    <script src="js/use_free.js"></script>
+    <script>
+        $.ajax({	
+		    //请求方式
+		    type:'get',
+		    
+		    //发送请求的地址
+		    //我这里的地址是不需要传数据的，所以没有拼接参数
+		    url:'http://192.168.1.29:3000/useing/public',
+		    
+		    //服务器返回的数据类型
+		    dataType:'json',
+		    
+		    //请求成功的处理
+		    success:function(data){
+		        console.log(data);
+		        //获取需要的数据
+		        // var group = data.content;
+		        
+		        //拼接字符串
+			    var str = '';
+			    //对数据做遍历，拼接到页面显示
+		        for(var i=0;i<data.length;i++){
+			        // str += '<div class="item">'+
+			        // 	   	'<div class="item-title">'+ data[i].totalnum +'</div>'+
+			        // 	   		'<div>'+
+			        // 	   			'<span class="item-content">'+ data[i].num +'</span>'+
+			        // 	   			'<span class="item-content">'+ data[i].apply +'</span>'+
+			        // 	   		'</div>'+
+			        // 	   '</div>';
+
+                    $('.totalnum').text(data[i].totalnum);
+                    $('.num').text(data[i].num);
+                    $('.apply').text(data[i].apply);
+		        }
+		        //放入页面的容器显示
+		        // $('#container').html(str);
+		        
+		    },
+		    //请求失败的处理
+		    error:function(jqXHR){
+		        console.log(jqXHR);
+		    }
+		});
+    </script>
+
+    <div class="content">
+        <!-- nav -->
+        <div class="top">
+        <div class="nav">
+            <div class="nav_left"><a href="../index.html"><img src="./img/logonew.png" alt="" style="width: 130px;"></a></div>
+            <div class="nav_middle">
+                <ul>
+                <li class="on"><a href="../index.html">首页</a></li>
+                <li class=""><a href="../play/play.html">酷玩</a></li>
+                <li class=""><a href="../guid/guid.html">导购</a></li>
+                <li class=""><a class="active" href="./use.html">试用</a></li>
+                <li class=""><a href="../report/report.html">报告</a></li>
+            </ul></div>
+            <div class="nav_right">
+                <ul>
+                    <li><img src="../css/css_img/search.png" alt="" style="width: 20px;vertical-align: middle;"></li>
+                    <li><a href="../regist.html" target="_blank"><button class="btn">注册</button></a></li>
+                </ul>
+            </div>
+        </div>
+        </div>
+          <!-- middle -->
+    <div class="middle">
+    
+        <header>
+            <h1>免费试用</h1>
+            <ul class="tab_top center_">
+                <li class="current_">大众试用</li>
+                <li>体验师专享</li>
+            </ul>
+        </header>
+        <div class="tabb">
+
+            <div class="tab tab_x">
+                <div class="tab_list">
+                    <ul class="center_">
+                        <li class="current">全部</li>
+                        <li>申请中</li>
+                        <li>试用中</li>
+                        <li>已结束</li>
+                    </ul>
+                </div>
+                <div class="tab_con">
+                    <!-- 全部 -->
+                    <div class="item center_" style="display: block;">
+                        <div class="main_sp">
+                            <!-- 1 -->
+                            <div class="box1">
+                                <div class="sf">首发</div>
+                                <img src="http://192.168.1.29:3000/img/hot1.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">怎么骑都不会累的智能自行车：云马 C1试骑体验</h4>
+                                    <div class="sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="bgsl">
+                                        报告数量：8
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 2 -->
+                            <div class="box1">
+                                <div class="sf">首发</div>
+                                <img src="http://192.168.1.29:3000/img/hot2.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">声音不是最优秀，但它形音完美的结合，足够打动人心</h4>
+                                    <div class="sy2 sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="symd">
+                                        查看试用名单
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 3 -->
+                            <div class="box1">
+                                <div class="sf">首发</div>
+                                <img src="http://192.168.1.29:3000/img/hot3.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">Liquid Image 338 运动摄像眼镜</h4>
+                                    <div class="sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="bgsl">
+                                        报告数量：8
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 4 -->
+                            <div class="box1">
+                                <div class="sf">首发</div>
+                                <img src="http://192.168.1.29:3000/img/hot4.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">巴慕达 The Toaster 烤面包机</h4>
+                                    <div class="sy1 sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="sysj">
+                                        剩余时间：2天
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 1 -->
+                            <div class="box1">
+                                <div class="sf">首发</div>
+                                <img src="http://192.168.1.29:3000/img/hot6.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">空气净化器里面学问多得惊呆你，你选对了吗？</h4>
+                                    <div class="sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="bgsl">
+                                        报告数量：8
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 2 -->
+                            <div class="box1">
+                                <div class="sf">首发</div>
+                                <img src="http://192.168.1.29:3000/img/hot7.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">风光大片信手拈来！vivo X6Plus不只是快，还是一台拍照利器</h4>
+                                    <div class="sy2 sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="symd">
+                                        查看试用名单
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 3 -->
+                            <div class="box1">
+                                <div class="sf">首发</div>
+                                <img src="http://192.168.1.29:3000/img/hot8.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">到底有没有完美的iPhone手机配件，答案都在这里</h4>
+                                    <div class="sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="bgsl">
+                                        报告数量：8
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 4 -->
+                            <div class="box1">
+                                <div class="sf">首发</div>
+                                <img src="http://192.168.1.29:3000/img/hot9.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">巴慕达 The Toaster 烤面包机</h4>
+                                    <div class="sy1 sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="sysj">
+                                        剩余时间：2天
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 1 -->
+                            <div class="box1">
+                                <div class="sf">首发</div>
+                                <img src="http://192.168.1.29:3000/img/hot1.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">怎么骑都不会累的智能自行车：云马 C1试骑体验</h4>
+                                    <div class="sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="bgsl">
+                                        报告数量：8
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 2 -->
+                            <div class="box1">
+                                <div class="sf">首发</div>
+                                <img src="http://192.168.1.29:3000/img/hot2.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">声音不是最优秀，但它形音完美的结合，足够打动人心</h4>
+                                    <div class="sy2 sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="symd">
+                                        查看试用名单
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 3 -->
+                            <div class="box1">
+                                <div class="sf">首发</div>
+                                <img src="http://192.168.1.29:3000/img/hot3.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">Liquid Image 338 运动摄像眼镜</h4>
+                                    <div class="sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="bgsl">
+                                        报告数量：8
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 4 -->
+                            <div class="box1">
+                                <div class="sf">首发</div>
+                                <img src="http://192.168.1.29:3000/img/hot4.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">巴慕达 The Toaster 烤面包机</h4>
+                                    <div class="sy1 sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="sysj">
+                                        剩余时间：2天
+                                    </div>
+                                </div>
+                            </div>
+    
+    
+                        </div>
+                    </div>
+                    <!-- 申请中 -->
+                    <div class="item center_">
+                        <div class="main_sp">
+                            <div class="box1">
+                                <div class="sf">首发</div>
+                                <img src="http://192.168.1.29:3000/img/hot1.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">巴慕达 The Toaster 烤面包机</h4>
+                                    <div class="sy1 sy">
+                                        <div class="sy_ totalnum">1</div>
+                                        <div class="sy_ num">1</div>
+                                    </div>
+                                    <h5><span class="apply">1</span>申请</h5>
+                                    <div class="sysj">
+                                        报告数量:
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="sf">首发</div>
+                                <img src="http://192.168.1.29:3000/img/hot2.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">巴慕达 The Toaster 烤面包机</h4>
+                                    <div class="sy1 sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="sysj">
+                                        剩余时间：2天
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="sf">首发</div>
+                                <img src="http://192.168.1.29:3000/img/hot3.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">巴慕达 The Toaster 烤面包机</h4>
+                                    <div class="sy1 sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="sysj">
+                                        查看试用名单
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="sf">首发</div>
+                                <img src="http://192.168.1.29:3000/img/hot4.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">巴慕达 The Toaster 烤面包机</h4>
+                                    <div class="sy1 sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="sysj">
+                                        剩余时间：2天
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="sf">首发</div>
+                                <img src="http://192.168.1.29:3000/img/hot1.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">巴慕达 The Toaster 烤面包机</h4>
+                                    <div class="sy1 sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="sysj">
+                                        报告数量
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="sf">首发</div>
+                                <img src="http://192.168.1.29:3000/img/re4.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">巴慕达 The Toaster 烤面包机</h4>
+                                    <div class="sy1 sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="sysj">
+                                        查看试用名单
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="sf">首发</div>
+                                <img src="http://192.168.1.29:3000/img/re4.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">巴慕达 The Toaster 烤面包机</h4>
+                                    <div class="sy1 sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="sysj">
+                                        报告数量：8
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="sf">首发</div>
+                                <img src="http://192.168.1.29:3000/img/re4.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">巴慕达 The Toaster 烤面包机</h4>
+                                    <div class="sy1 sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="sysj">
+                                        剩余时间：2天
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="sf">首发</div>
+                                <img src="http://192.168.1.29:3000/img/re4.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">巴慕达 The Toaster 烤面包机</h4>
+                                    <div class="sy1 sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="sysj">
+                                        查看试用名单
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="sf">首发</div>
+                                <img src="http://192.168.1.29:3000/img/re4.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">巴慕达 The Toaster 烤面包机</h4>
+                                    <div class="sy1 sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="sysj">
+                                        剩余时间：2天
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="sf">首发</div>
+                                <img src="http://192.168.1.29:3000/img/re4.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">巴慕达 The Toaster 烤面包机</h4>
+                                    <div class="sy1 sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="sysj">
+                                        剩余时间：2天
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="sf">首发</div>
+                                <img src="http://192.168.1.29:3000/img/re4.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">巴慕达 The Toaster 烤面包机</h4>
+                                    <div class="sy1 sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="sysj">
+                                        剩余时间：2天
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 试用中 -->
+                    <div class="item center_">
+                        <div class="main_sp">
+                            <div class="box1">
+                                <div class="sf">首发</div>
+                                <img src="http://192.168.1.29:3000/img/hot2.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">声音不是最优秀，但它形音完美的结合，足够打动人心</h4>
+                                    <div class="sy2 sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="sysj">
+                                        剩余时间2天
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="sf">首发</div>
+                                <img src="http://192.168.1.29:3000/img/hot2.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">声音不是最优秀，但它形音完美的结合，足够打动人心</h4>
+                                    <div class="sy2 sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="symd">
+                                        剩余时间2天
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="sf">首发</div>
+                                <img src="http://192.168.1.29:3000/img/hot2.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">声音不是最优秀，但它形音完美的结合，足够打动人心</h4>
+                                    <div class="sy2 sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="symd">
+                                        剩余时间2天
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="sf">首发</div>
+                                <img src="http://192.168.1.29:3000/img/hot2.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">声音不是最优秀，但它形音完美的结合，足够打动人心</h4>
+                                    <div class="sy2 sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="symd">
+                                        剩余时间2天
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="sf">首发</div>
+                                <img src="http://192.168.1.29:3000/img/hot2.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">声音不是最优秀，但它形音完美的结合，足够打动人心</h4>
+                                    <div class="sy2 sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="symd">
+                                        剩余时间2天
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="sf">首发</div>
+                                <img src="http://192.168.1.29:3000/img/hot2.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">声音不是最优秀，但它形音完美的结合，足够打动人心</h4>
+                                    <div class="sy2 sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="symd">
+                                        剩余时间2天
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="sf">首发</div>
+                                <img src="http://192.168.1.29:3000/img/hot2.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">声音不是最优秀，但它形音完美的结合，足够打动人心</h4>
+                                    <div class="sy2 sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="symd">
+                                        剩余时间2天
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="sf">首发</div>
+                                <img src="http://192.168.1.29:3000/img/hot2.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">声音不是最优秀，但它形音完美的结合，足够打动人心</h4>
+                                    <div class="sy2 sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="symd">
+                                        剩余时间2天
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="sf">首发</div>
+                                <img src="http://192.168.1.29:3000/img/hot2.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">声音不是最优秀，但它形音完美的结合，足够打动人心</h4>
+                                    <div class="sy2 sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="symd">
+                                        剩余时间2天
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="sf">首发</div>
+                                <img src="http://192.168.1.29:3000/img/hot2.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">声音不是最优秀，但它形音完美的结合，足够打动人心</h4>
+                                    <div class="sy2 sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="symd">
+                                        剩余时间2天
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="sf">首发</div>
+                                <img src="http://192.168.1.29:3000/img/hot2.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">声音不是最优秀，但它形音完美的结合，足够打动人心</h4>
+                                    <div class="sy2 sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="symd">
+                                        剩余时间2天
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="sf">首发</div>
+                                <img src="http://192.168.1.29:3000/img/hot2.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">声音不是最优秀，但它形音完美的结合，足够打动人心</h4>
+                                    <div class="sy2 sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="symd">
+                                        剩余时间2天
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="sf">首发</div>
+                                <img src="http://192.168.1.29:3000/img/hot2.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">声音不是最优秀，但它形音完美的结合，足够打动人心</h4>
+                                    <div class="sy2 sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="symd">
+                                        剩余时间2天
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="sf">首发</div>
+                                <img src="http://192.168.1.29:3000/img/hot2.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">声音不是最优秀，但它形音完美的结合，足够打动人心</h4>
+                                    <div class="sy2 sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="symd">
+                                        剩余时间2天
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="sf">首发</div>
+                                <img src="http://192.168.1.29:3000/img/hot2.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">声音不是最优秀，但它形音完美的结合，足够打动人心</h4>
+                                    <div class="sy2 sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="symd">
+                                        剩余时间2天
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="sf">首发</div>
+                                <img src="http://192.168.1.29:3000/img/hot2.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">声音不是最优秀，但它形音完美的结合，足够打动人心</h4>
+                                    <div class="sy2 sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="symd">
+                                        剩余时间2天
+                                    </div>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+                    <!-- 已结束 -->
+                    <div class="item center_">
+                        <div class="main_sp">
+                            <div class="box1">
+                                <div class="sf">首发</div>
+                                <img src="http://192.168.1.29:3000/img/hot1.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">怎么骑都不会累的智能自行车：云马 C1试骑体验</h4>
+                                    <div class="sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="bgsl">
+                                        报告数量：8
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="sf">首发</div>
+                                <img src="http://192.168.1.29:3000/img/hot1.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">怎么骑都不会累的智能自行车：云马 C1试骑体验</h4>
+                                    <div class="sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="bgsl">
+                                        报告数量：8
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="sf">首发</div>
+                                <img src="http://192.168.1.29:3000/img/hot1.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">怎么骑都不会累的智能自行车：云马 C1试骑体验</h4>
+                                    <div class="sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="bgsl">
+                                        报告数量：8
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="sf">首发</div>
+                                <img src="http://192.168.1.29:3000/img/hot1.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">怎么骑都不会累的智能自行车：云马 C1试骑体验</h4>
+                                    <div class="sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="bgsl">
+                                        报告数量：8
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="sf">首发</div>
+                                <img src="http://192.168.1.29:3000/img/hot1.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">怎么骑都不会累的智能自行车：云马 C1试骑体验</h4>
+                                    <div class="sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="bgsl">
+                                        报告数量：8
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="sf">首发</div>
+                                <img src="http://192.168.1.29:3000/img/hot1.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">怎么骑都不会累的智能自行车：云马 C1试骑体验</h4>
+                                    <div class="sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="bgsl">
+                                        报告数量：8
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="sf">首发</div>
+                                <img src="http://192.168.1.29:3000/img/hot1.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">怎么骑都不会累的智能自行车：云马 C1试骑体验</h4>
+                                    <div class="sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="bgsl">
+                                        报告数量：8
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="sf">首发</div>
+                                <img src="http://192.168.1.29:3000/img/hot1.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">怎么骑都不会累的智能自行车：云马 C1试骑体验</h4>
+                                    <div class="sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="bgsl">
+                                        报告数量：8
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="sf">首发</div>
+                                <img src="http://192.168.1.29:3000/img/hot1.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">怎么骑都不会累的智能自行车：云马 C1试骑体验</h4>
+                                    <div class="sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="bgsl">
+                                        报告数量：8
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="sf">首发</div>
+                                <img src="http://192.168.1.29:3000/img/hot1.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">怎么骑都不会累的智能自行车：云马 C1试骑体验</h4>
+                                    <div class="sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="bgsl">
+                                        报告数量：8
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="sf">首发</div>
+                                <img src="http://192.168.1.29:3000/img/hot1.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">怎么骑都不会累的智能自行车：云马 C1试骑体验</h4>
+                                    <div class="sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="bgsl">
+                                        报告数量：8
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="sf">首发</div>
+                                <img src="http://192.168.1.29:3000/img/hot1.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">怎么骑都不会累的智能自行车：云马 C1试骑体验</h4>
+                                    <div class="sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="bgsl">
+                                        报告数量：8
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+            <div class="tab_2 tab_x">
+                <div class="tab_list">
+                    <ul class="center_">
+                        <li class="current">全部</li>
+                        <li>申请中</li>
+                        <li>试用中</li>
+                        <li>已结束</li>
+                    </ul>
+                </div>
+                <div class="tab_con">
+                    <!-- 全部 -->
+                    <div class="item center_" style="display: block;">
+                        <div class="main_sp">
+                            <!-- 1 -->
+                            <div class="box1">
+                                <div class="tys">体验师专享</div>
+                                <img src="http://192.168.1.29:3000/img/hot1.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">怎么骑都不会累的智能自行车：云马 C1试骑体验</h4>
+                                    <div class="sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="bgsl">
+                                        报告数量：8
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 2 -->
+                            <div class="box1">
+                                <div class="tys">体验师专享</div>
+                                <img src="http://192.168.1.29:3000/img/hot2.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">声音不是最优秀，但它形音完美的结合，足够打动人心</h4>
+                                    <div class="sy2 sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="symd">
+                                        查看试用名单
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 3 -->
+                            <div class="box1">
+                                <div class="tys">体验师专享</div>
+                                <img src="http://192.168.1.29:3000/img/hot3.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">Liquid Image 338 运动摄像眼镜</h4>
+                                    <div class="sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="bgsl">
+                                        报告数量：8
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 4 -->
+                            <div class="box1">
+                                <div class="tys">体验师专享</div>
+                                <img src="http://192.168.1.29:3000/img/hot4.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">巴慕达 The Toaster 烤面包机</h4>
+                                    <div class="sy1 sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="sysj">
+                                        剩余时间：2天
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 1 -->
+                            <div class="box1">
+                                <div class="tys">体验师专享</div>
+                                <img src="http://192.168.1.29:3000/img/hot6.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">空气净化器里面学问多得惊呆你，你选对了吗？</h4>
+                                    <div class="sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="bgsl">
+                                        报告数量：8
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 2 -->
+                            <div class="box1">
+                                <div class="tys">体验师专享</div>
+                                <img src="http://192.168.1.29:3000/img/hot7.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">风光大片信手拈来！vivo X6Plus不只是快，还是一台拍照利器</h4>
+                                    <div class="sy2 sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="symd">
+                                        查看试用名单
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 3 -->
+                            <div class="box1">
+                                <div class="tys">体验师专享</div>
+                                <img src="http://192.168.1.29:3000/img/hot8.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">到底有没有完美的iPhone手机配件，答案都在这里</h4>
+                                    <div class="sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="bgsl">
+                                        报告数量：8
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 4 -->
+                            <div class="box1">
+                                <div class="tys">体验师专享</div>
+                                <img src="http://192.168.1.29:3000/img/hot9.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">巴慕达 The Toaster 烤面包机</h4>
+                                    <div class="sy1 sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="sysj">
+                                        剩余时间：2天
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 1 -->
+                            <div class="box1">
+                                <div class="tys">体验师专享</div>
+                                <img src="http://192.168.1.29:3000/img/hot1.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">怎么骑都不会累的智能自行车：云马 C1试骑体验</h4>
+                                    <div class="sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="bgsl">
+                                        报告数量：8
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 2 -->
+                            <div class="box1">
+                                <div class="tys">体验师专享</div>
+                                <img src="http://192.168.1.29:3000/img/hot2.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">声音不是最优秀，但它形音完美的结合，足够打动人心</h4>
+                                    <div class="sy2 sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="symd">
+                                        查看试用名单
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 3 -->
+                            <div class="box1">
+                                <div class="tys">体验师专享</div>
+                                <img src="http://192.168.1.29:3000/img/hot3.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">Liquid Image 338 运动摄像眼镜</h4>
+                                    <div class="sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="bgsl">
+                                        报告数量：8
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 4 -->
+                            <div class="box1">
+                                <div class="tys">体验师专享</div>
+                                <img src="http://192.168.1.29:3000/img/hot4.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">巴慕达 The Toaster 烤面包机</h4>
+                                    <div class="sy1 sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="sysj">
+                                        剩余时间：2天
+                                    </div>
+                                </div>
+                            </div>
+    
+    
+                        </div>
+                    </div>
+                    <!-- 申请中 -->
+                    <div class="item center_">
+                        <div class="main_sp">
+                            <div class="box1">
+                                <div class="tys">体验师专享</div>
+                                <img src="http://192.168.1.29:3000/img/hot1.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">巴慕达 The Toaster 烤面包机</h4>
+                                    <div class="sy1 sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="sysj">
+                                        报告数量
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="tys">体验师专享</div>
+                                <img src="http://192.168.1.29:3000/img/hot2.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">巴慕达 The Toaster 烤面包机</h4>
+                                    <div class="sy1 sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="sysj">
+                                        剩余时间：2天
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="tys">体验师专享</div>
+                                <img src="http://192.168.1.29:3000/img/hot3.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">巴慕达 The Toaster 烤面包机</h4>
+                                    <div class="sy1 sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="sysj">
+                                        查看试用名单
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="tys">体验师专享</div>
+                                <img src="http://192.168.1.29:3000/img/hot4.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">巴慕达 The Toaster 烤面包机</h4>
+                                    <div class="sy1 sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="sysj">
+                                        剩余时间：2天
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="tys">体验师专享</div>
+                                <img src="http://192.168.1.29:3000/img/hot1.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">巴慕达 The Toaster 烤面包机</h4>
+                                    <div class="sy1 sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="sysj">
+                                        报告数量
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="tys">体验师专享</div>
+                                <img src="http://192.168.1.29:3000/img/re4.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">巴慕达 The Toaster 烤面包机</h4>
+                                    <div class="sy1 sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="sysj">
+                                        查看试用名单
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="tys">体验师专享</div>
+                                <img src="http://192.168.1.29:3000/img/re4.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">巴慕达 The Toaster 烤面包机</h4>
+                                    <div class="sy1 sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="sysj">
+                                        报告数量：8
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="tys">体验师专享</div>
+                                <img src="http://192.168.1.29:3000/img/re4.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">巴慕达 The Toaster 烤面包机</h4>
+                                    <div class="sy1 sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="sysj">
+                                        剩余时间：2天
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="tys">体验师专享</div>
+                                <img src="http://192.168.1.29:3000/img/re4.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">巴慕达 The Toaster 烤面包机</h4>
+                                    <div class="sy1 sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="sysj">
+                                        查看试用名单
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="tys">体验师专享</div>
+                                <img src="http://192.168.1.29:3000/img/re4.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">巴慕达 The Toaster 烤面包机</h4>
+                                    <div class="sy1 sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="sysj">
+                                        剩余时间：2天
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="tys">体验师专享</div>
+                                <img src="http://192.168.1.29:3000/img/re4.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">巴慕达 The Toaster 烤面包机</h4>
+                                    <div class="sy1 sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="sysj">
+                                        剩余时间：2天
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="tys">体验师专享</div>
+                                <img src="http://192.168.1.29:3000/img/re4.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">巴慕达 The Toaster 烤面包机</h4>
+                                    <div class="sy1 sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="sysj">
+                                        剩余时间：2天
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 试用中 -->
+                    <div class="item center_">
+                        <div class="main_sp">
+                            <div class="box1">
+                                <div class="tys">体验师专享</div>
+                                <img src="http://192.168.1.29:3000/img/hot2.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">声音不是最优秀，但它形音完美的结合，足够打动人心</h4>
+                                    <div class="sy2 sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="sysj">
+                                        剩余时间2天
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="tys">体验师专享</div>
+                                <img src="http://192.168.1.29:3000/img/hot2.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">声音不是最优秀，但它形音完美的结合，足够打动人心</h4>
+                                    <div class="sy2 sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="symd">
+                                        剩余时间2天
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="tys">体验师专享</div>
+                                <img src="http://192.168.1.29:3000/img/hot2.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">声音不是最优秀，但它形音完美的结合，足够打动人心</h4>
+                                    <div class="sy2 sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="symd">
+                                        剩余时间2天
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="tys">体验师专享</div>
+                                <img src="http://192.168.1.29:3000/img/hot2.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">声音不是最优秀，但它形音完美的结合，足够打动人心</h4>
+                                    <div class="sy2 sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="symd">
+                                        剩余时间2天
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="tys">体验师专享</div>
+                                <img src="http://192.168.1.29:3000/img/hot2.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">声音不是最优秀，但它形音完美的结合，足够打动人心</h4>
+                                    <div class="sy2 sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="symd">
+                                        剩余时间2天
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="tys">体验师专享</div>
+                                <img src="http://192.168.1.29:3000/img/hot2.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">声音不是最优秀，但它形音完美的结合，足够打动人心</h4>
+                                    <div class="sy2 sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="symd">
+                                        剩余时间2天
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="tys">体验师专享</div>
+                                <img src="http://192.168.1.29:3000/img/hot2.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">声音不是最优秀，但它形音完美的结合，足够打动人心</h4>
+                                    <div class="sy2 sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="symd">
+                                        剩余时间2天
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="tys">体验师专享</div>
+                                <img src="http://192.168.1.29:3000/img/hot2.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">声音不是最优秀，但它形音完美的结合，足够打动人心</h4>
+                                    <div class="sy2 sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="symd">
+                                        剩余时间2天
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="tys">体验师专享</div>
+                                <img src="http://192.168.1.29:3000/img/hot2.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">声音不是最优秀，但它形音完美的结合，足够打动人心</h4>
+                                    <div class="sy2 sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="symd">
+                                        剩余时间2天
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="tys">体验师专享</div>
+                                <img src="http://192.168.1.29:3000/img/hot2.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">声音不是最优秀，但它形音完美的结合，足够打动人心</h4>
+                                    <div class="sy2 sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="symd">
+                                        剩余时间2天
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="tys">体验师专享</div>
+                                <img src="http://192.168.1.29:3000/img/hot2.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">声音不是最优秀，但它形音完美的结合，足够打动人心</h4>
+                                    <div class="sy2 sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="symd">
+                                        剩余时间2天
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="tys">体验师专享</div>
+                                <img src="http://192.168.1.29:3000/img/hot2.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">声音不是最优秀，但它形音完美的结合，足够打动人心</h4>
+                                    <div class="sy2 sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="symd">
+                                        剩余时间2天
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="tys">体验师专享</div>
+                                <img src="http://192.168.1.29:3000/img/hot2.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">声音不是最优秀，但它形音完美的结合，足够打动人心</h4>
+                                    <div class="sy2 sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="symd">
+                                        剩余时间2天
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="sf">首发</div>
+                                <img src="http://192.168.1.29:3000/img/hot2.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">声音不是最优秀，但它形音完美的结合，足够打动人心</h4>
+                                    <div class="sy2 sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="symd">
+                                        剩余时间2天
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="sf">首发</div>
+                                <img src="http://192.168.1.29:3000/img/hot2.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">声音不是最优秀，但它形音完美的结合，足够打动人心</h4>
+                                    <div class="sy2 sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="symd">
+                                        剩余时间2天
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="sf">首发</div>
+                                <img src="http://192.168.1.29:3000/img/hot2.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">声音不是最优秀，但它形音完美的结合，足够打动人心</h4>
+                                    <div class="sy2 sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="symd">
+                                        剩余时间2天
+                                    </div>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+                    <!-- 已结束 -->
+                    <div class="item center_">
+                        <div class="main_sp">
+                            <div class="box1">
+                                <div class="sf">首发</div>
+                                <img src="http://192.168.1.29:3000/img/hot1.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">怎么骑都不会累的智能自行车：云马 C1试骑体验</h4>
+                                    <div class="sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="bgsl">
+                                        报告数量：8
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="sf">首发</div>
+                                <img src="http://192.168.1.29:3000/img/hot1.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">怎么骑都不会累的智能自行车：云马 C1试骑体验</h4>
+                                    <div class="sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="bgsl">
+                                        报告数量：8
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="sf">首发</div>
+                                <img src="http://192.168.1.29:3000/img/hot1.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">怎么骑都不会累的智能自行车：云马 C1试骑体验</h4>
+                                    <div class="sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="bgsl">
+                                        报告数量：8
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="sf">首发</div>
+                                <img src="http://192.168.1.29:3000/img/hot1.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">怎么骑都不会累的智能自行车：云马 C1试骑体验</h4>
+                                    <div class="sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="bgsl">
+                                        报告数量：8
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="sf">首发</div>
+                                <img src="http://192.168.1.29:3000/img/hot1.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">怎么骑都不会累的智能自行车：云马 C1试骑体验</h4>
+                                    <div class="sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="bgsl">
+                                        报告数量：8
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="sf">首发</div>
+                                <img src="http://192.168.1.29:3000/img/hot1.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">怎么骑都不会累的智能自行车：云马 C1试骑体验</h4>
+                                    <div class="sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="bgsl">
+                                        报告数量：8
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="sf">首发</div>
+                                <img src="http://192.168.1.29:3000/img/hot1.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">怎么骑都不会累的智能自行车：云马 C1试骑体验</h4>
+                                    <div class="sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="bgsl">
+                                        报告数量：8
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="sf">首发</div>
+                                <img src="http://192.168.1.29:3000/img/hot1.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">怎么骑都不会累的智能自行车：云马 C1试骑体验</h4>
+                                    <div class="sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="bgsl">
+                                        报告数量：8
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="sf">首发</div>
+                                <img src="http://192.168.1.29:3000/img/hot1.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">怎么骑都不会累的智能自行车：云马 C1试骑体验</h4>
+                                    <div class="sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="bgsl">
+                                        报告数量：8
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="sf">首发</div>
+                                <img src="http://192.168.1.29:3000/img/hot1.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">怎么骑都不会累的智能自行车：云马 C1试骑体验</h4>
+                                    <div class="sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="bgsl">
+                                        报告数量：8
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="sf">首发</div>
+                                <img src="http://192.168.1.29:3000/img/hot1.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">怎么骑都不会累的智能自行车：云马 C1试骑体验</h4>
+                                    <div class="sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="bgsl">
+                                        报告数量：8
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box1">
+                                <div class="sf">首发</div>
+                                <img src="http://192.168.1.29:3000/img/hot1.jpg" alt="">
+                                <div class="wz">
+                                    <h4 class="text">怎么骑都不会累的智能自行车：云马 C1试骑体验</h4>
+                                    <div class="sy">
+                                        <div class="sy_ totalnum">2032</div>
+                                        <div class="sy_ num">20台</div>
+                                    </div>
+                                    <h5><span class="apply">1392</span>申请</h5>
+                                    <div class="bgsl">
+                                        报告数量：8
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+        <!-- 下拉 -->
+        <div class="center_">
+            <div class="more"><img src="../css/css_img/more.png" alt=""> 向下拉加载更多</div>
+        </div>
+    
+    
+    
+    
+    </div>
+        <!-- footer -->
+        <div class="bottom">
+            <div class="footer">
+                <div class="foot_top">
+                    <div class="foot_code"><a href="../index.html"><img src="../img/code.png" alt="" style="width: 140px;"></a></div>
+                    <div class="foot_logo"><a href="../index.html"><img src="../img/logoImg.jpg" alt="" style="width: 100px;"></a>
+                        <p>全球酷玩试用导购平台<br>酷·新奇·好玩·品质</p>
+                        <p>微信添加“ Jguojguo获取我们的装务</p>
+                    </div>
+                    <div class="foot_text">  
+                        <dl>
+                            <dt>免费试用</dt>
+                            <dd><a href="../help.html">试用流程</a></dd>
+                            <dd><a href="../help.html">如何提高成功率</a></dd>
+                        </dl> 
+                            <dl>
+                                <dt>友情链接</dt>
+                                <dd>智东西 <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> WEIBUSI</dd>
+                                <dd>搜狐IT   <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>    腾讯科技</dd>
+                                <dd>搜狐数码  <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>   凤凰科技</dd>
+                                <dd>凤凰数码  <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>   Pconline</dd>
+                                <dd>泡泡网   <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>    3W咖啡</dd>
+                                <dd>ZUK社区  <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>    亿觅emie</dd>
+                                <dd>极客公园   <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>  易迅易启玩</dd>
+                               <dd>果库</dd>
+                            </dl>
+                            <dl>
+                                <dt>购买攻略</dt>
+                                <dd><a href="../index.html" target="_blank">美亚海淘教程</a></dd>
+                                <dd><a href="../index.html" target="_blank">日亚海淘教程</a></dd>
+                                <dd><a href="../index.html" target="_blank">海淘转运攻略</a></dd>
+                                <dd><a href="../index.html" target="_blank">kickstarter 众筹购买攻略</a></dd>
+                                <dd><a href="../index.html" target="_blank">indiegogo 众筹购买攻略</a></dd>
+                            </dl>
+                           <dl>
+                                <dt>厂商合作</dt>
+                                <dd><a href="../index.html" target="_blank">关于极果</a></dd>
+                                <dd><a href="../index.html" target="_blank">联系我们</a></dd>
+                                <dd><a href="../index.html" target="_blank">商务合作：BD@jiguo.com</a></dd>
+                                <dd><a href="../index.html" target="_blank">CEO邮箱：CEO@jiguo.com</a></dd>
+                            </dl>
+                           
+                    </div>
+                </div>
+                <div class="foot_bottom"><p> © 2021 极果版权所有</p></div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+  
+
+
+
+</body>
+
+</html>

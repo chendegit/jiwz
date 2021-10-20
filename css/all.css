@@ -1,0 +1,20 @@
+@keyframes anima{
+    from{
+        position: relative;
+        top: 0px;
+        box-shadow: 0px 0px 0px #c7c6c6;
+       
+    }
+    to{
+        position: relative;
+        top: -5px;
+        box-shadow: 5px 5px 15px #c7c6c6;
+       
+    }
+}
+.play_sp_img:hover{
+    animation: anima;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
